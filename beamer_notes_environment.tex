@@ -1,0 +1,58 @@
+\documentclass{beamer}
+
+\usepackage{pgfpages}
+\usepackage{xsavebox}
+
+\usetheme{Boadilla}
+\usecolortheme{seahorse}
+
+\setbeamertemplate{note page}{%
+  \pagecolor{yellow!5}
+  \vspace{1.5ex}
+  \insertnote}
+
+\setbeameroption{show notes on second screen=right}
+
+\newenvironment{notes}
+  {%
+    \begin{xlrbox}{NotesBox}
+    \begin{minipage}{\textwidth}
+    \begin{itemize}
+    \setlength{\itemindent}{0em}
+  }{%
+    \end{itemize}
+    \end{minipage}
+    \end{xlrbox}
+    \note{\theNotesBox}}
+    
+\begin{document}
+
+\begin{frame}{Example Slide}
+  Something you need.
+
+  \begin{notes}
+    \item This is a pen
+    
+    \item I like it
+    
+    \item Nested \texttt{itemize}
+    \begin{itemize}
+        \item Alice
+        \item Bob
+    \end{itemize}
+    
+    \item Put \texttt{enumerate}
+    \begin{enumerate}
+        \item Alice
+        \item Bob
+    \end{enumerate}
+
+    \item You also can put some \texttt{description} in this \texttt{item}
+    \begin{description}
+      \item[Alice] She is a girl
+      \item[Bob] He is a boy
+    \end{description}
+  \end{notes}
+\end{frame}
+
+\end{document}
