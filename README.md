@@ -1,4 +1,4 @@
-`notes` environment
+`notes` environment: Beamer environment like `\note` command
 =================================
 
 ![example image](https://y-yu.github.io/beamer-notes-environment/beamer_notes_environment.png)
