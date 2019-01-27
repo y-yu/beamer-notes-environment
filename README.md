@@ -1,7 +1,7 @@
 `notes` environment
 =================================
 
-![example image](https://y-yu.github.io/beamer-notes-environment/beamer-notes-environment.png)
+![example image](https://y-yu.github.io/beamer-notes-environment/beamer_notes_environment.png)
 
 See also an [example PDF file](https://github.com/y-yu/beamer-notes-environment/blob/master/beamer_notes_environment.pdf). This PDF file was created by [Overleaf](https://www.overleaf.com/).
 
